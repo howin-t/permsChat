@@ -1,0 +1,14 @@
+name: permsChat
+main: com.howintsui.mc.permsChat.PermsChat
+depend: [ Vault ]
+version: 0.1
+author: howin
+website: howintsui.com
+description: Chat management plugin for permissions-based pre/suffixes
+permissions:
+  permsChat.spy:
+    description: Allow to listen the all local chat messages
+    default: op
+  permsChat.color:
+    description: Allow to use color codes in the messages
+    default: op

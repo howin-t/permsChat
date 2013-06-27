@@ -1,0 +1,34 @@
+# Available placeholders: %prefix, %suffix, %world, %displayname, %player, %faction
+# Make sure that for any preperms or sufperms, the corresponding prefixes and suffixes exist
+# Or the plugin will crash.
+formats:
+    message-format: '[FACTION]>%prefix%displayname%suffix> &f%message'
+    local-message-format: '[LOCAL]%player: &f%message'
+toggles:
+    ranged-mode: false
+    factions-support: false
+other:
+    chat-range: 1000.0
+fixes:
+    preperms:
+        - permsChat.prefix.owner
+        - permsChat.prefix.chatmod
+        - permsChat.prefix.emerald
+        - permsChat.prefix.diamond
+        - permsChat.prefix.gold
+        - permsChat.prefix.redstone
+        - permsChat.prefix.iron
+        - permsChat.prefix.memberplus
+    sufperms:
+        - permsChat.suffix.owner
+    prefixes:
+        memberplus: '&b'
+        iron: '&7Iron>'
+        redstone: '&4RedStone>'
+        gold: '&6Gold>'
+        diamond: '&bDiamond>'
+        emerald: '&aEmerald>'
+        chatmod: '&dChatMod>'
+        owner: '&cOwner>'
+    suffixes:
+        owner: 'ASuffix!'
